@@ -419,8 +419,6 @@ break;
 	<script src="cpanel/vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
 	<script src="cpanel/dist/js/jquery.slimscroll.js"></script>
 	<script src="cpanel/vendors/bower_components/moment/min/moment.min.js"></script>
-	<script src="cpanel/vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
-	<script src="cpanel/dist/js/simpleweather-data.js"></script>
 	<script src="cpanel/vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
 	<script src="cpanel/vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
 	<script src="cpanel/dist/js/dropdown-bootstrap-extended.js"></script>
