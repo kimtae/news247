@@ -1,0 +1,44 @@
+1. Requirements
+
+Make sure you have the following:
+- Apache 2 or higher, with:
+  mod_rewrite
+- PHP 5.6 or higher, with:
+  MySQL 5.7 or higher
+----------------------------------------------------------------------------------------------------------------
+
+2. Installation Process
+
+Import the database.sql file from the "MySQL" folder into your MySQL database 
+using the import function available in MySQL. With a text editor open the 
+following file located inside the 'Script/db' folder: config.php, and replace 
+what's between the quotes (e.g: 'YOURDBNAME') with your MySQL settings:
+
+//Database Server Name:
+DEFINE('DBHost','YOUR SEVER NAME');
+								
+//Database Username:
+DEFINE('DBUser', 'YOUR USERNAME');
+								
+//Database Password:
+DEFINE('DBPass','YOUR PASSWORD');
+								
+//Database Name:
+DEFINE('DBName','YOUR DB NAME');
+
+	                     
+Upload the files from the "Script" folder on the FTP server 
+(usually public_html folder when installing it on a domain).
+Set the CHMOD to 777, 775 or 775 (depending on the server configuration) to the following folders: 
+'/images/blog/, '/images/logo/, '/images/user/.
+----------------------------------------------------------------------------------------------------------------
+
+3. Configuration
+
+The default login email for the Admin is "leezbeez69@gmail.com", and the password is "12345678" without quotes
+----------------------------------------------------------------------------------------------------------------
+
+4. Contact
+WhatsApp +255 689 938643
+Instagram https://www.instagram.com/beatsbybwire/
+----------------------------------------------------------------------------------------------------------------
