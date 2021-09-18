@@ -1,0 +1,17 @@
+RewriteEngine on
+# directory browsing
+Options All -Indexes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+RewriteRule ^login/?$     pages/page_login.php?key=$1&value=$2 [QSA,L]
+RewriteRule ^logout/?$     pages/page_logout.php?key=$1&value=$2 [QSA,L]
+RewriteRule ^forgot-password/?$     pages/forgot_pw.php?key=$1&value=$2 [QSA,L]
+RewriteRule ^reset-pw/?$     pages/reset_pw.php?key=$1&value=$2 [QSA,L]
+RewriteRule ^contact/?$     pages/page_contact.php?key=$1&value=$2 [QSA,L]
+RewriteRule ^redirect/?$     pages/page_redirect.php?key=$1&value=$2 [QSA,L]
+RewriteRule ^articles/?$     pages/page_articles.php?key=$1&value=$2 [QSA,L]
+RewriteRule ^category/([^/.]+)/([^/.]+)/{0,1}$   pages/category.php?key=$1&value2=$2 [QSA,L]
+RewriteRule ^article/([^/.]+)/([^/.]+)/{0,1}$   pages/article.php?key=$1&value2=$2 [QSA,L]
+RewriteRule ^tags/([^/.]+)/{0,1}$   pages/tags.php?key=$1&value2=$2 [QSA,L]
+php_flag output_buffering on
